@@ -84,6 +84,9 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+    <script src="<?php echo e(asset('js/jquery.js')); ?>"></script>
+    <script src="<?php echo e(asset('js/bootstrap.js')); ?>"></script>
+    <script src="<?php echo e(asset('js/vue.js')); ?>"></script>
+    <script src="<?php echo e(asset('js/app.js')); ?>"></script>
 </body>
 </html>
