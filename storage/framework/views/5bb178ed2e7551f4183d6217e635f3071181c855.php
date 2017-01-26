@@ -18,7 +18,7 @@
             <div class="posts" v-if="posts.length">
                 <div class="media" v-for="post in posts" track-by="id">
                     <div class="media-left">
-                        <img class="media-object">
+                        <img class="media-object" v-bind:src="post.user.avatar">
                     </div>
                     <div class="media-body">
                         <div class="user">
