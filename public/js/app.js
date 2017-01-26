@@ -15,7 +15,7 @@ new Vue({
                     'body': this.post
                 },
                 success: function (data) {
-                    console.log(data);
+                    console.log(data.user.profileUrl);
                     this.post = '';
                     this.posts.unshift(data);
                 }.bind(this),

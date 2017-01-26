@@ -18,7 +18,8 @@ class User extends Authenticatable
     ];
 
     protected $appends = [
-        'avatar'
+        'avatar',
+        'profileUrl'
     ];
 
     public function posts()
@@ -39,5 +40,10 @@ class User extends Authenticatable
     public function getRouteKeyName()
     {
         return 'username';
+    }
+
+    public function getProfileUrlAttribute()
+    {
+        return route('user.index', $this);
     }
 }
