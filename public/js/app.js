@@ -1,7 +1,8 @@
 new Vue({
     el: "#timeline",
     data: {
-        post: ''
+        post: '',
+        posts: []
     },
     methods: {
         postStatus: function (e) {
@@ -14,8 +15,9 @@ new Vue({
                     'body': this.post
                 },
                 success: function (data) {
-                    console.log(data);
+                    //console.log(data);
                     this.post = '';
+                    this.posts.unshift(data);
                 }.bind(this),
                 error: function () {
                     console.log('Error occurred');
