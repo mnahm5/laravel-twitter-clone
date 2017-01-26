@@ -4,9 +4,13 @@
 <div class="container">
     <div class="row" id="timeline">
         <div class="col-md-4">
-            <form action="#">
+            <form action="#" v-on:submit="postStatus">
                 <div class="form-group">
-                    <textarea class="form-control" rows="5" maxlength="140" required placeholder="What are you up to?"></textarea>
+                    <textarea class="form-control" rows="5"
+                              maxlength="140" required
+                              placeholder="What are you up to?"
+                              v-model="post"
+                    ></textarea>
                 </div>
                 <input type="submit" value="Post" class="form-control">
             </form>
