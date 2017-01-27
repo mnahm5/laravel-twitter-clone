@@ -8,7 +8,7 @@
 
                 <?php if(Auth::user()->isNot($user)): ?>
                     <?php if(Auth::user()->isFollowing($user)): ?>
-                        UnFollow
+                        <a class="btn btn-danger" href="<?php echo e(route('user.unfollow', $user)); ?>">UnFollow</a>
                     <?php else: ?>
                         <a class="btn btn-success" href="<?php echo e(route('user.follow', $user)); ?>">Follow</a>
                     <?php endif; ?>
