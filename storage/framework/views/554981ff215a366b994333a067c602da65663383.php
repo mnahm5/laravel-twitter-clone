@@ -88,6 +88,6 @@
     <script src="<?php echo e(asset('js/jquery.js')); ?>"></script>
     <script src="<?php echo e(asset('js/bootstrap.js')); ?>"></script>
     <script src="<?php echo e(asset('js/vue.js')); ?>"></script>
-    <script src="<?php echo e(asset('js/app.js')); ?>"></script>
+    <?php echo $__env->yieldContent('script'); ?>
 </body>
 </html>

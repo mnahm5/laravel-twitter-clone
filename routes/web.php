@@ -23,5 +23,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/users/{user}/follow', 'UserController@follow')->name('user.follow');
     Route::get('/users/{user}/unfollow', 'UserController@unfollow')->name('user.unfollow');
 
-    //
+    Route::get('/input/questions', 'QuestionController@inputPage');
+    Route::post('/input/questions', 'QuestionController@input');
 });
