@@ -19,4 +19,18 @@ class PostController extends Controller
 
         return response()->json($post->with('user')->find($createdPost->id));
     }
+
+    public function index(Request $request, Post $post)
+    {
+        $allPosts = $post->whereIn(
+            'user_id',
+            $request->user()->following()->pluck('users.id')->push($request->user()->id)
+        )->with('user');
+        $posts = $allPosts->orderBy('created_at', 'desc')
+                ->take($request->get('limit', 20))->get();
+        return response()->json([
+            'posts' => $posts,
+            'total' => $allPosts->count()
+        ]);
+    }
 }

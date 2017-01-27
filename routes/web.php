@@ -15,7 +15,10 @@ Auth::routes();
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/', 'TimeLineController@index');
+
     Route::post('/posts', 'PostController@create');
+    Route::get('/posts', 'PostController@index');
+
     Route::get('/users/{user}', 'UserController@index')->name('user.index');
     Route::get('/users/{user}/follow', 'UserController@follow')->name('user.follow');
     Route::get('/users/{user}/unfollow', 'UserController@unfollow')->name('user.unfollow');
