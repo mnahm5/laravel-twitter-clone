@@ -1,7 +1,7 @@
 <?php $__env->startSection('content'); ?>
 <div class="container">
     <div class="row" id="timeline">
-        <div class="col-md-4">
+        <div class="col-md-2">
             <form action="#" v-on:submit="postStatus">
                 <div class="form-group">
                     <textarea class="form-control" rows="5"
@@ -13,7 +13,7 @@
                 <input type="submit" value="Post" class="form-control">
             </form>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-4">
             <p v-if="!posts.length">No posts to see here yet. Follow someone to make it happen</p>
             <div class="posts" v-if="posts.length">
                 <div class="media" v-for="post in posts" track-by="id" transition="expand">
@@ -31,6 +31,9 @@
             </div>
             <br>
             <a v-if="total > posts.length" class="btn btn-primary" v-on:click="getMorePosts($event)">Show More</a>
+        </div>
+        <div class="col-md-6">
+            Game
         </div>
     </div>
 </div>
