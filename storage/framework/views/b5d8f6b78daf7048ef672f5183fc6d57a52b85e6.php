@@ -10,7 +10,7 @@
                     <?php if(Auth::user()->isFollowing($user)): ?>
                         UnFollow
                     <?php else: ?>
-                        Follow
+                        <a class="btn btn-success" href="<?php echo e(route('user.follow', $user)); ?>">Follow</a>
                     <?php endif; ?>
                 <?php endif; ?>
             </div>
