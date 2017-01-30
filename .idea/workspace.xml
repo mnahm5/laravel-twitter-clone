@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab38184c-1a2b-4723-9323-16fbc7ffd900" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/sessions/3J3Zcv41XnOtQv7Nlih9UwSvFzTN3sD7p4CNbdOU" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/sessions/CVmhyPt8y4zlR4iGNthya323jO84h1qNVHQzrE5t" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/sessions/JCN8J8GLJQH0C83LNQ5S0i7VaZtngx6w4ZuJ9yUy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/sessions/S2EfLIi8lK2peKa2o0gKUn9SARmeTu52t4A7FIjs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/sessions/kTpsYiuJJdMfBXe78PVuPpL4o5f0QdXbT9EwS2to" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/sessions/A0EIN15QBZCfVkOSdlhBeE4I3Sy3adjCTZQUIksl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/554981ff215a366b994333a067c602da65663383.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/5bb178ed2e7551f4183d6217e635f3071181c855.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/fbe4e469d2d02086ad9131a1f29094827e64398c.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/JCN8J8GLJQH0C83LNQ5S0i7VaZtngx6w4ZuJ9yUy" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/laravel.log" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -228,6 +227,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -486,7 +507,7 @@
       <workItem from="1485488049860" duration="10071000" />
       <workItem from="1485525716635" duration="5110000" />
       <workItem from="1485744338247" duration="19126000" />
-      <workItem from="1485780695168" duration="3730000" />
+      <workItem from="1485780695168" duration="3877000" />
     </task>
     <task id="LOCAL-00001" summary="authentication">
       <created>1485427219069</created>
@@ -747,11 +768,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485784282244</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="getting started with heroku">
+      <created>1485784446196</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1485784446196</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57521000" />
+    <option name="totallyTimeSpent" value="57668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
