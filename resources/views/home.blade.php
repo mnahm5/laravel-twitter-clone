@@ -14,6 +14,23 @@
                 </div>
                 <input type="submit" value="Post" class="form-control">
             </form>
+            <h3>All Users</h3>
+            <ul class="list-group">
+                @foreach($not_following as $username)
+                    <li class="list-group-item">
+                        <a href="{{ url('/users/'. $username) }}">{{ $username }}</a>
+                        <a href="{{ url('/users/' . $username . '/follow') }}" class="btn-success pull-right">Follow</a>
+                    </li>
+                    <br>
+                @endforeach
+                @foreach($following as $username)
+                    <li class="list-group-item">
+                        <a href="{{ url('/users/'. $username) }}">{{ $username }}</a>
+                        <a href="{{ url('/users/' . $username . '/unfollow') }}" class="btn-danger pull-right">Unfollow</a>
+                    </li>
+                    <br>
+                @endforeach
+            </ul>
         </div>
         <div class="col-md-8">
             <p v-if="!posts.length">No posts to see here yet. Follow someone to make it happen</p>

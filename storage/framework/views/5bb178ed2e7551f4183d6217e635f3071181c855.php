@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('content'); ?>
 <div class="container">
     <div class="row" id="timeline">
@@ -12,6 +14,23 @@
                 </div>
                 <input type="submit" value="Post" class="form-control">
             </form>
+            <h3>All Users</h3>
+            <ul class="list-group">
+                <?php $__currentLoopData = $not_following; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $username): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    <li class="list-group-item">
+                        <a href="<?php echo e(url('/users/'. $username)); ?>"><?php echo e($username); ?></a>
+                        <a href="<?php echo e(url('/users/' . $username . '/follow')); ?>" class="btn-success pull-right">Follow</a>
+                    </li>
+                    <br>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                <?php $__currentLoopData = $following; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $username): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    <li class="list-group-item">
+                        <a href="<?php echo e(url('/users/'. $username)); ?>"><?php echo e($username); ?></a>
+                        <a href="<?php echo e(url('/users/' . $username . '/unfollow')); ?>" class="btn-danger pull-right">Unfollow</a>
+                    </li>
+                    <br>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+            </ul>
         </div>
         <div class="col-md-8">
             <p v-if="!posts.length">No posts to see here yet. Follow someone to make it happen</p>
@@ -35,10 +54,6 @@
     </div>
 </div>
 
-<?php $__env->stopSection(); ?>
-
-<?php $__env->startSection('script'); ?>
-    <script src="<?php echo e(asset('js/app.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
