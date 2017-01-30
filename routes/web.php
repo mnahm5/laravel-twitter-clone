@@ -13,6 +13,10 @@
 
 Auth::routes();
 
+Route::get('/', function () {
+    return 'It works';
+});
+
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/', 'TimeLineController@index');
 
