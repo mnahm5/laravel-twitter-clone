@@ -9,6 +9,7 @@ class UserController extends Controller
 {
     public function index(User $user)
     {
+        //dd(\Auth::user()->following()->pluck('username'));
         return view('users.index')->with('user', $user);
     }
 
