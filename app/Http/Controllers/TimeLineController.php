@@ -14,7 +14,6 @@ class TimeLineController extends Controller
         $followings = Auth::user()->following()->pluck('username');
         $cannot_follow = clone $followings;
         $cannot_follow->push(Auth::user()->username);
-        //dd($followings);
         $not_following_users = DB::table('users')
             ->whereNotIn('username', $cannot_follow)
             ->get()->pluck('username');
